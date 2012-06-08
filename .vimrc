@@ -52,8 +52,7 @@ endif
 
 if has('cscope')
   set nocscopeverbose
-
-  set cscopetag cscopeverbose
+  set cscopetag
 
   if has('quickfix')
     set cscopequickfix=s-,c-,d-,i-,t-,e-
@@ -65,6 +64,5 @@ if has('cscope')
   cnoreabbrev csr cs reset
   cnoreabbrev css cs show
   cnoreabbrev csh cs help
-
 endif
 
