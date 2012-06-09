@@ -31,7 +31,12 @@ nnoremap <Tab> <Esc>
 vnoremap <Tab> <Esc>gV
 onoremap <Tab> <Esc>
 inoremap <Tab> <Esc>`^
-inoremap <S-Tab> <Tab>
+inoremap <Leader><Tab> <Tab>
+
+"The following is useful for getting to column 80
+nnoremap g<Bar> 80<Bar>
+
+set splitright
 
 set background=dark
 
@@ -52,7 +57,8 @@ endif
 
 if has('cscope')
   set nocscopeverbose
-  set cscopetag
+
+  set cscopetag cscopeverbose
 
   if has('quickfix')
     set cscopequickfix=s-,c-,d-,i-,t-,e-
