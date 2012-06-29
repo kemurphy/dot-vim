@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/kemurphy/dev1/sw/dev/gpu_drv/chips_a/drivers/resman/kernel/hal/nv50'
+let g:netrw_dirhist_2='/home/kemurphy/resman/kernel/hal/nv50'
+let g:netrw_dirhist_3='/home/kemurphy/.vim/bundle/perforce/plugin'
+let g:netrw_dirhist_4='/home/kemurphy/.i3'

@@ -46,6 +46,7 @@ set smartcase
 set incsearch
 set autowrite
 set hidden
+set hlsearch
 
 if has("syntax")
   syntax on
@@ -72,3 +73,4 @@ if has('cscope')
   cnoreabbrev csh cs help
 endif
 
+let vimpager_scrolloff=0
