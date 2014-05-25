@@ -74,3 +74,14 @@ if has('cscope')
 endif
 
 let vimpager_scrolloff=0
+
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor="latex"
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_CompileRule_pdf='latexmk -pdf $*'
+let g:Tex_ViewRule_pdf='evince'
+
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
