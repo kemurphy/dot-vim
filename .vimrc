@@ -81,7 +81,13 @@ let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_CompileRule_pdf='latexmk -pdf $*'
 let g:Tex_ViewRule_pdf='evince'
 
-set undofile
-set undodir=$HOME/.vim/undo
-set undolevels=1000
-set undoreload=10000
+if has('persistent_undo')
+    set undofile
+    set undodir=$HOME/.vim/undo
+
+    nnoremap U :GundoToggle<CR>
+    let g:gundo_preview_bottom = 1
+    let g:gundo_right = 1
+    let g:gundo_help = 0
+    let g:gundo_close_on_revert = 1
+endif
