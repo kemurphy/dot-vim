@@ -10,3 +10,6 @@
 [submodule "bundle/table-mode"]
 	path = bundle/table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "bundle/RST-Tables"]
+	path = bundle/RST-Tables
+	url = https://github.com/vim-scripts/RST-Tables.git
