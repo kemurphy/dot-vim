@@ -7,3 +7,6 @@
 [submodule "bundle/perforce"]
 	path = bundle/perforce
 	url = https://github.com/pydave/vim-perforce
+[submodule "bundle/table-mode"]
+	path = bundle/table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git
