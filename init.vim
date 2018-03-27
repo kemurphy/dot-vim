@@ -54,24 +54,26 @@ endif
 
 if has("autocmd")
   filetype plugin indent on
+  autocmd FileType rust setlocal sw=2 sts=2 ts=2
+  autocmd FileType javascript setlocal sw=2 sts=2 ts=2
 endif
 
-if has('cscope')
-  set nocscopeverbose
-
-  set cscopetag cscopeverbose
-
-  if has('quickfix')
-    set cscopequickfix=s-,c-,d-,i-,t-,e-
-  endif
-
-  cnoreabbrev csa cs add
-  cnoreabbrev csf cs find
-  cnoreabbrev csk cs kill
-  cnoreabbrev csr cs reset
-  cnoreabbrev css cs show
-  cnoreabbrev csh cs help
-endif
+" if has('cscope')
+"   set nocscopeverbose
+"
+"   set cscopetag cscopeverbose
+"
+"   if has('quickfix')
+"     set cscopequickfix=s-,c-,d-,i-,t-,e-
+"   endif
+"
+"   cnoreabbrev csa cs add
+"   cnoreabbrev csf cs find
+"   cnoreabbrev csk cs kill
+"   cnoreabbrev csr cs reset
+"   cnoreabbrev css cs show
+"   cnoreabbrev csh cs help
+" endif
 
 let vimpager_scrolloff=0
 
@@ -91,3 +93,6 @@ if has('persistent_undo')
     let g:gundo_help = 0
     let g:gundo_close_on_revert = 1
 endif
+
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
